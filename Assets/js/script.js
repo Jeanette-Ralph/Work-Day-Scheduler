@@ -1,7 +1,7 @@
 // defining variables globally
 var currentDate = moment().format("dddd, MMMM Do YYYY");
 var currentTime = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
-var rowTime = moment().format("HH:mm:ss a");
+var rowTimeRef = moment().format("HH:mm:ss a");
 var saveBtn = $('#saveBtn');
 
 // current time being displayed in header
@@ -12,27 +12,27 @@ $(function currentDate() {
 });
 
 // function to check if a row time block area is in the past/ present or future
-
 $(function timeChecker() {
     // need a reference variable to the current time
     // made it 24 hr time so it is easy to compare
-    var rowTime = moment().format("HH:mm:ss A");
+    var rowTimeRef = moment().format("HH:mm:ss A");
+    // need to create a var that will trach the row id numbers
 
     // create an if statement to check if time is past 
         // call the past style to display
-    if ( eventRow < rowTime) {
+    if ( rowTime < rowTimeRef) {
         eventRow == 'past';
     }
 
     // create an if statement to check if time is present
         // call the present style to display
-    if (eventRow = rowTime) {
+    if (rowTime = rowTimeRef) {
         eventRow == 'present';
     }
 
     // create an if statement to check if time is future
         // call the future style to display
-    if (eventRow = rowTime) {
+    if (rowTime = rowTimeRef) {
         eventRow == 'future';
     }
 
@@ -48,10 +48,17 @@ saveBtn.on('click', function()
     // calling it by eventToDo
     var storedEvent = localStorage.getItem("eventToDo");
     return storedEvent;
-
 }
 );
 
+// making sure thee input stays on the page after it is refreshed
+
+$(function pageRefresh() {
+    document.getElementById('event').innerHTML = localStorage.getItem('eventToDo');
+
+});
+
+window.onload = pageRefresh; 
 
 // WHEN I view the timeblocks for that day
 // THEN each timeblock is color coded to indicate whether it is in the past, present, or future
