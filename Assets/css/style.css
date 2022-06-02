@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1;
 }
 
@@ -35,14 +35,17 @@ textarea {
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
+  height: 140px;
   border: 1px solid white;
+  border-bottom: #000000;
 }
 
-#hour {
+/* going to chaange the hour class to time */
+.time {
   background-color: #ffffff;
   color: #000000;
   border: 1px dashed #000000;
+  text-align: right;
 }
 
 .past {
@@ -60,7 +63,8 @@ textarea {
   color: white;
 }
 
-#saveBtn {
+/* changing this to a class */
+.save-button {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -68,7 +72,8 @@ textarea {
   color: white;
 }
 
-#saveBtn i:hover {
+/* changing this to a class */
+.save-button  i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }

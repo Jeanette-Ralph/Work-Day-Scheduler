@@ -28,148 +28,167 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="current-day" class="lead"></p>
     </header>
 
     <!-- Timeblocks go here -->
 
     <div class="container">
-      <div class="row align-items-start row row-eq-height" >
-        <div class="col-3 " id="hour"> 
-          <div class="col-3 text-right" id="8">
-            8:00am
+        <div class="row">
+          <div class="col-3 hour time" id="8"> 
+            <div>
+              8:00am
+            </div>
           </div>
-        </div>
-        <div class="col-6 border border-dark" >
-          <input type="text" class="form-control" id="event" placeholder="Enter Event" onchange='saveValue(this);'>
-        </div>
-        <div class="col-3 border border-dark " id="saveBtn">
-          <button type="submit"  class="btn btn-primary btn-lg btn-block" >Save</button>
-        </div>
-        
-    
-        <div class="col-3 " id="hour"> 
-          <div class="col-3 text-right" id="9" >
-            9:00am
+          <div class="col-6 border-top border-dark note-box" >
+            <input type="text" class="form-control" id="8" placeholder="Enter Event" >
           </div>
-        </div>
-        <div class="col-6 border border-dark">
-          <input type="text" class="form-control" id="event" placeholder="Enter Event">
-        </div>
-        <div class="col-3 border border-dark " id="saveBtn">
-          <button type="submit"  class="btn btn-primary btn-lg btn-block" >Save</button>
+          <div class="col-3 border border-dark save-button" id="saveBtn">
+            <button type="submit" id='8'class="btn btn-primary btn-block form-control" id="8">Save</button>
+          </div>
         </div>
 
-        <div class="col-3 " id="hour"> 
-          <div class="col-3 text-right" id="10">
-            10:00am
+        <div class="row">
+          <div class="col-3 hour time" id="9"> 
+            <div>
+              9:00am
+            </div>
+          </div>
+          <div class="col-6 border-top border-dark note-box">
+            <input type="text" class="form-control" id="9" placeholder="Enter Event">
+          </div>
+          <div class="col-3 border border-dark save-button" id="saveBtn">
+            <button type="submit"  class="btn btn-primary btn-block form-control">Save</button>
           </div>
         </div>
-        <div class="col-6 border border-dark">
-          <input type="text" class="form-control" id="event" placeholder="Enter Event">
-        </div>
-        <div class="col-3 border border-dark " id="saveBtn">
-          <button type="submit"  class="btn btn-primary btn-lg btn-block" >Save</button>
-        </div>
 
-        <div class="col-3 " id="hour"> 
-          <div class="col-3 text-right" id="11">
-            11:00am
+        <div class="row">
+          <div class="col-3 hour time" id="10"> 
+            <div>
+              10:00am
+            </div>
+          </div>
+          <div class="col-6 border-top border-dark note-box">
+            <input type="text" class="form-control" id="event" placeholder="Enter Event">
+          </div>
+          <div class="col-3 border border-dark save-button" id="saveBtn">
+            <button type="submit"  class="btn btn-primary btn-block form-control">Save</button>
           </div>
         </div>
-        <div class="col-6 border border-dark">
-          <input type="text" class="form-control" id="event" placeholder="Enter Event">
-        </div>
-        <div class="col-3 border border-dark " id="saveBtn">
-          <button type="submit"  class="btn btn-primary btn-lg btn-block" >Save</button>
-        </div>
 
-        <div class="col-3 " id="hour"> 
-          <div class="col-3 text-right" id="12">
-            12:00pm
+        <div class="row">
+          <div class="col-3 hour time" id="11"> 
+            <div>
+              11:00am
+            </div>
           </div>
-        </div>
-        <div class="col-6 border border-dark">
-          <input type="text" class="form-control" id="event" placeholder="Enter Event">
-        </div>
-        <div class="col-3 border border-dark " id="saveBtn">
-          <button type="submit"  class="btn btn-primary btn-lg btn-block" >Save</button>
-        </div>
-
-        <div class="col-3 " id="hour"> 
-          <div class="col-3 text-right" id="13">
-            1:00pm
+          <div class="col-6 border-top border-dark note-box ">
+            <input type="text" class="form-control" id="event" placeholder="Enter Event">
           </div>
-        </div>
-        <div class="col-6 border border-dark">
-          <input type="text" class="form-control" id="event" placeholder="Enter Event">
-        </div>
-        <div class="col-3 border border-dark " id="saveBtn">
-          <button type="submit"  class="btn btn-primary btn-lg btn-block" >Save</button>
-        </div>
+          <div class="col-3 border border-dark save-button" id="saveBtn">
+            <button type="submit"  class="btn btn-primary btn-block form-control">Save</button>
+          </div>
+      </div>
 
-        <div class="col-3 " id="hour"> 
-          <div class="col-3 text-right" id="14">
+      <div class="row">
+          <div class="col-3 hour time" id="12"> 
+            <div>
+              12:00pm
+            </div>
+          </div>
+          <div class="col-6 border-top border-dark note-box">
+            <input type="text" class="form-control" id="event" placeholder="Enter Event">
+          </div>
+          <div class="col-3 border border-dark save-button" id="saveBtn">
+            <button type="submit"  class="btn btn-primary btn-block form-control">Save</button>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 hour time" id="13"> 
+            <div>
+              1:00pm
+            </div>
+          </div>
+          <div class="col-6 border-top border-dark note-box">
+            <input type="text" class="form-control" id="event" placeholder="Enter Event">
+          </div>
+          <div class="col-3 border border-dark save-button" id="saveBtn">
+            <button type="submit"  class="btn btn-primary btn-block form-control">Save</button>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 hour time" id="14"> 
+          <div>
             2:00pm
           </div>
         </div>
-        <div class="col-6 border border-dark">
+        <div class="col-6 border-top border-dark note-box">
           <input type="text" class="form-control" id="event" placeholder="Enter Event">
         </div>
-        <div class="col-3 border border-dark " id="saveBtn">
-          <button type="submit"  class="btn btn-primary btn-lg btn-block" >Save</button>
+        <div class="col-3 border border-dark save-button" id="saveBtn">
+          <button type="submit"  class="btn btn-primary btn-block form-control">Save</button>
         </div>
+      </div>
 
-        <div class="col-3 " id="hour" itemid="15"> 
-          <div class="col-3 text-right" >
+      <div class="row">
+        <div class="col-3 hour time" id="15"> 
+          <div>
             3:00pm
           </div>
-        </div>
-        <div class="col-6 border border-dark">
-          <input type="text" class="form-control" id="event" placeholder="Enter Event">
-        </div>
-        <div class="col-3 border border-dark " id="saveBtn">
-          <button type="submit"  class="btn btn-primary btn-lg btn-block" >Save</button>
-        </div>
+          </div>
+          <div class="col-6 border-top border-dark note-box">
+            <input type="text" class="form-control" id="event" placeholder="Enter Event">
+          </div>
+          <div class="col-3 border border-dark save-button" id="saveBtn">
+            <button type="submit"  class="btn btn-primary btn-block form-control">Save</button>
+          </div>
+      </div>
 
-        <div class="col-3 " id="hour"> 
-          <div class="col-3 text-right" id="16">
+      <div class="row">
+        <div class="col-3 hour time" id="16"> 
+          <div>
             4:00pm
           </div>
         </div>
-        <div class="col-6 border border-dark">
+        <div class="col-6 border-top border-dark note-box">
           <input type="text" class="form-control" id="event" placeholder="Enter Event">
         </div>
-        <div class="col-3 border border-dark " id="saveBtn">
-          <button type="submit"  class="btn btn-primary btn-lg btn-block" >Save</button>
+        <div class="col-3 border border-dark save-button" id="saveBtn">
+          <button type="submit"  class="btn btn-primary btn-block form-control">Save</button>
         </div>
+      </div>
 
-        <div class="col-3 " id="hour"> 
-          <div class="col-3 text-right" id="17">
+      <div class="row">
+        <div class="col-3 hour time" id="17"> 
+          <div>
             5:00pm
           </div>
         </div>
-        <div class="col-6 border border-dark">
+        <div class="col-6 border-top border-dark note-box">
           <input type="text" class="form-control" id="event" placeholder="Enter Event">
         </div>
-        <div class="col-3 border border-dark " id="saveBtn">
-          <button type="submit"  class="btn btn-primary btn-lg btn-block" >Save</button>
+        <div class="col-3 border border-dark save-button" id="saveBtn">
+          <button type="submit"  class="btn btn-primary btn-block form-control">Save</button>
         </div>
+      </div>
 
-        <div class="col-3 " id="hour"> 
-          <div class="col-3 text-right" id="18">
+      <div class="row">
+        <div class="col-3 hour time" id="18"> 
+          <div>
             6:00pm
           </div>
         </div>
-        <div class="col-6 border border-dark">
+        <div class="col-6 border-top border-dark note-box">
           <input type="text" class="form-control" id="event" placeholder="Enter Event">
         </div>
-        <div class="col-3 border border-dark " id="saveBtn">
-          <button type="submit" class="btn btn-primary btn-lg btn-block" >Save</button>
+        <div class="col-3 border border-dark save-button" id="saveBtn">
+          <button type="submit" class="btn btn-primary btn-block form-control">Save</button>
         </div>
-      </div>
-    </div>
-      
+      </div> 
+    </div> 
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="Assets/js/script.js"></script>
@@ -177,15 +196,5 @@
 </html>
 
 <!-- GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist -->
