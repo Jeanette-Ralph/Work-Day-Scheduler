@@ -3,7 +3,7 @@ $(document).ready(function () {
     // defining variables globally
     var currentDate = moment().format("dddd, MMMM Do YYYY");
     var rowTimeRef = moment().hour();
-    var saveBtn = $('#saveBtn');
+    var saveBtn = $('.save-button');
     var rowTime = $('.hour');
 
     // current time being displayed in header
@@ -71,9 +71,11 @@ $(document).ready(function () {
         // added the same time id to the button and the form, but not the button div
 
         // doing a for each loop
+        // need to select the siblings of the div
+        // divs dont have their own value
         inputs.each(function () {
-            var value = $(this).val();
-            var time = $(this).attr('id');
+            var value = $(this).siblings().value;
+            var time = $(this).siblings().attr('id');
             localStorage.setItem(time, value);
 
         })
@@ -90,12 +92,9 @@ $(document).ready(function () {
         inputs.each(function () {
             var time = $(this).attr('id');
             // getting input for this time
+
+            // get item from local storage
             var value = localStorage.getItem(time);
-
-            // set value of input field at this time
-
-
-
         })
 
     }
