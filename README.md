@@ -36,7 +36,7 @@ N/A
 
 If you have any further questions please reach out.
 
-Email: jenette.k.ralph@gmail.com
+Email: jeanette.k.ralph@gmail.com
 
 GitHub link: [Jeanette-Ralph](https://github.com/Jeaanette-Ralph)
 
