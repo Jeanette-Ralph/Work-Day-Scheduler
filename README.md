@@ -40,7 +40,7 @@ Email: jenette.k.ralph@gmail.com
 
 GitHub link: [Jeanette-Ralph](https://github.com/Jeaanette-Ralph)
 
-GitHub username: /Jeaanette-Ralph
+GitHub username: /Jeanette-Ralph
 
 
 
