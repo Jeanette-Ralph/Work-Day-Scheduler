@@ -38,9 +38,9 @@ If you have any further questions please reach out.
 
 Email: jeanette.k.ralph@gmail.com
 
-GitHub link: [Jeanette-Ralph](https://github.com/Jeaanette-Ralph)
+GitHub link: [Work Day Scheduler Respository](https://github.com/Jeanette-Ralph/Work-Day-Scheduler)
 
-GitHub username: Jeanette-Ralph
+GitHub username: [Jeanette-Ralph](https://github.com/Jeanette-Ralph)
 
 
 
